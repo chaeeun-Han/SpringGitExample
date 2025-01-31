@@ -29,7 +29,7 @@ public class HttpMethodOverrideFilter implements Filter {
             };
             chain.doFilter(wrapper, response); // 래퍼를 다음 필터로 전달한다.
         } else {
-            chain.doFilter(request, response); // 기존 요청을 그대로 전달
+            chain.doFilter(request, response); // 기존 요청을 그대로 전달한다.
         }
     }
 
