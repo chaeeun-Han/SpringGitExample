@@ -27,7 +27,7 @@ public class HttpMethodOverrideFilter implements Filter {
                     return methodOverride; // X-HTTP-Method-Override 헤더의 값으로 HTTP 메서드를 변경
                 }
             };
-            chain.doFilter(wrapper, response); // 래퍼를 다음 필터로 전달
+            chain.doFilter(wrapper, response); // 래퍼를 다음 필터로 전달한다.
         } else {
             chain.doFilter(request, response); // 기존 요청을 그대로 전달
         }
