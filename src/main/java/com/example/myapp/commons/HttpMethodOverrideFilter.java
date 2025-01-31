@@ -40,6 +40,6 @@ public class HttpMethodOverrideFilter implements Filter {
 
     @Override
     public void destroy() {
-        // 필터 종료 시 정리해야 할 리소스가 있다면 이 메서드를 구현할
+        // 필터 종료 시 정리해야 할 리소스가 있다면 이 메서드를 구현할 수 있습니다.
     }
 }
